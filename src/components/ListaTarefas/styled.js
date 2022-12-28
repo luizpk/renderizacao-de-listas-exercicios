@@ -42,6 +42,7 @@ export const ListaContainer = styled.div`
   display: flex;
   flex-direction: column;
   overflow: auto;
+  justify-content: center;
 `;
 
 export const RemoveButton = styled.button`
@@ -71,4 +72,20 @@ export const Tarefa = styled.li`
 export const LinhaHorizontal = styled.hr`
   width: 100%;
   margin: 16px;
-`
+`;
+
+
+
+export const TarefaCompleta = styled.li`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 6px 8px;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: lightblue;
+  }
+`;
